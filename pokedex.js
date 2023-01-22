@@ -1,4 +1,4 @@
-const myUl$$ = document.getElementById("pokedex");
+const myOl$$ = document.getElementById("pokedex");
 const getCharacter = async () => {
 const characters =[];
 for(let i= 1; i< 151; i++){
@@ -22,7 +22,7 @@ id: poke.id,
 //console.log(mapPokemon);
 //pintar los pokemons
 const drawPokemon = (characters) => {
-myUl$$.innerHTML = "";
+myOl$$.innerHTML = "";
 for(const poke of characters){
 let pokeLi$$ =document.createElement("li");
 pokeLi$$.className ="card";
@@ -48,7 +48,7 @@ pokeLi$$.appendChild(pokeId$$);
 pokeLi$$.appendChild(pokeImage$$);
 pokeLi$$.appendChild(pokeType$$);
 
-myUl$$.appendChild(pokeLi$$);
+myOl$$.appendChild(pokeLi$$);
 }
 };
 const drawInput = (characters) => {
